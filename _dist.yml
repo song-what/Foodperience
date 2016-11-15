@@ -1,0 +1,16 @@
+# Site settings
+title: Jekyll & Bootstrap
+baseurl: ""
+markdown: kramdown
+
+# Plugins
+gems: [jekyll-assets]
+
+# Assets
+assets:
+  cachebust: none
+  cache: false
+  gzip: false
+  debug: false
+  js_compressor: uglifier
+  css_compressor: sass

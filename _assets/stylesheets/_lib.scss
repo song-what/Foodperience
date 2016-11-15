@@ -1,0 +1,32 @@
+//
+// Outer columns
+//
+// Create nested columns with grid width of outer columns.
+//
+// For example, a 2 column grid nested in a 6 column grid by default has
+// a width of only 2/6 outer columns (not 2 columns). Sometimes this is
+// not desired. The make-outer-column helpers calculate the inner width
+// based on the outer grid width so that the nested columns have a resulting
+// width aligning with the outer grid.
+//
+
+@function outer-columns($columns, $outer-columns) {
+  // Multiply inverse of column-to-grid ratio to compensate for nesting
+  @return $columns * $grid-columns / $outer-columns;
+}
+
+@mixin make-xs-outer-column($columns, $outer-columns) {
+  @include make-xs-column(outer-columns($columns, $outer-columns));
+}
+
+@mixin make-sm-outer-column($columns, $outer-columns) {
+  @include make-sm-column(outer-columns($columns, $outer-columns));
+}
+
+@mixin make-md-outer-column($columns, $outer-columns) {
+  @include make-md-column(outer-columns($columns, $outer-columns));
+}
+
+@mixin make-lg-outer-column($columns, $outer-columns) {
+  @include make-lg-column(outer-columns($columns, $outer-columns));
+}

@@ -1,0 +1,36 @@
+.content.indexHome {
+  background: url(asset_path('layout/home.svg')) center center no-repeat;
+  height: 518px;
+  width: 100%;
+  margin-top: 50px;
+  background-size: 100% 100%;
+}
+
+.home_button_1,
+.home_button_2,
+.home_button_3 {
+  display: block;
+  height: 160px;
+  width: 96%;
+  margin: 10px 2%;
+  border-radius: 3px;
+
+  img {
+    display: block;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
+
+//.home_button_1 {
+//  background: #87C1A4;
+//}
+//
+//.home_button_2 {
+//  background: #F0906C;
+//}
+//
+//.home_button_3 {
+//  background: #98B6C7;
+//}

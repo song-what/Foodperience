@@ -1,0 +1,24 @@
+.content.createRecipe {
+  width: 98%;
+  margin: 50px 1% 0;
+
+  input, textarea {
+    border: 1px solid #D1D1D1;
+    padding: 0 15px;
+  }
+
+  textarea.createText {
+    width: 100%;
+  }
+}
+
+.createSteps {
+  img {
+    margin: 15px 2px;
+    width: 50px;
+  }
+}
+
+.buttonAddStep, .buttonDone {
+  width: 50%;
+}

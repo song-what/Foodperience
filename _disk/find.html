@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foodperience</title>
+<link rel="canonical" href="/find.html">
+<link rel="alternate" type="application/atom+xml" title="Foodperience" href="/feed.xml" />
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600" rel="stylesheet">
+<script src="angular.min.js"></script>
+  <!-- <script src="data.js"></script> -->
+  <script src="app.js"></script>
+
+<link rel="stylesheet" href="/assets/bootstrap-aea2e8eb4b0a29e352020d1a2b44d629.css">
+<link rel="stylesheet" href="/assets/styles-c20925a3d351267b04efdc9e4f639ace.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <img src="/assets/layout/menu-85e50704ce32ebe843606d5f834ef77d.svg" class="open" />
+        <img src="/assets/layout/close-f51d641221d8f9704ba91e30ba8c2cd2.svg" alt="" class="close" />
+      </button>
+
+      <a class="navbar-brand" href="index_home.html">Foodperience</a>
+    </div>
+
+
+
+      <div id="navbar" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index_home.html">Home</a></li>
+    <li class="active"><a href="find.html">Rezept finden</a></li>
+    <li><a href="create.html">Rezept erstellen</a></li>
+    <li><a href="show.html">Live Show</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li><a href="help.html">Hilfe</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+<div class="content">
+
+<h1>Ich habe Hunger...</h1>
+
+<div class="findStart">
+
+  <input type="text" name="name" class="inputIngredientAdd" placeholder="Was gibt es noch in Kührschrank?" value="">
+  <input type="button" name="name" class="buttonIngredientAdd" value="">
+</div>
+
+<div class="findResult" ng-app="myApp" ng-controller="myCtrl">
+  <div class="recipeDetail" ng-repeat="x in rezepte">
+    <ul>
+      <li>
+        [[x.name]]
+      </li>
+      <li class="recipeIngredients" ng-repeat="z in x.zutaten">
+        [[z]]
+      </li>
+      <li class="recipeTime">
+        [[x.totalTime]]
+      </li>
+      <li>
+        <a href="detail.html">Detail</a>
+      </li>
+    </ul>
+  </div>
+  <div class="recipeDetail">
+    <ul>
+      <li>
+        Recipe Name
+      </li>
+      <li class="recipeIngredients">
+        Rezept Zutaten
+      </li>
+      <li class="recipeIngredients">
+        Rezept Zutaten
+      </li>
+      <li class="recipeTime">
+        20
+      </li>
+      <li>
+        <a href="#">Details</a>
+      </li>
+    </ul>
+  </div>
+  <!-- <div class="recipeDetail">
+    <ul>
+      <li>
+        Recipe Name
+      </li>
+      <li>
+        Rezept Zutaten
+      </li>
+      <li>
+        Rezept Zeit
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="recipeDetail">
+    <ul>
+      <li>
+        Recipe Name
+      </li>
+      <li>
+        Rezept Zutaten, Rezept Zutaten, Rezept Zutaten
+      </li>
+      <li>
+        Rezept Zeit
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="recipeDetail">
+    <ul>
+      <li>
+        Recipe Name
+      </li>
+      <li>
+        Rezept Zutaten, Rezept Zutaten, Rezept Zutaten
+      </li>
+      <li>
+        Rezept Zeit
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div> -->
+</div>
+
+    </div>
+
+    <script src="/assets/vendor/jquery-999a5948a9d8da7847a3afc9cc27ef6b.js"></script>
+<script src="/assets/vendor/bootstrap-8ece7cc9a31c90d8f7bd6a16c54825b6.js"></script>
+<script src="/assets/vendor-4a97d7ee4c0e243b83e475fed719f7d1.js"></script>
+<script src="/assets/application-becded8a25b4e6631b9be5fb11689936.js"></script>
+
+  </body>
+</html>

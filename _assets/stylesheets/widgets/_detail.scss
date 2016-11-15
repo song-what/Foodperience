@@ -1,0 +1,44 @@
+.content.detail {
+  margin-top: 50px;
+  background-color: rgba($color-orange, 0.2);
+  min-height: 518px;
+
+  table {
+    margin-left: 20px;
+    width: 85%;
+
+    tr {
+      margin: 10px 0;
+    }
+
+    tr td {
+      padding:  5px 5px;
+      width: 40%;
+
+      &:first-child {
+        width: 20%;
+      }
+
+      &.detailTotalTime {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+  .noAndYes {
+    height: 80px;
+
+    .no, .yes {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 80px;
+    }
+
+    a {
+      color: $color-dark-grey;
+    }
+  }
+}

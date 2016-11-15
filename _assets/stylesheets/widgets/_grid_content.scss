@@ -1,0 +1,74 @@
+/*
+  Grid content
+
+  | Columns  | Category  |  Class      |
+  --------------------------------------
+  1  column    Small-       .col-1
+  2  columns   Small        .col-2
+  3  columns   Small+       .col-3
+  - - - - - - - - - - - - - - - - - - -
+  4  columns   Normal-      .col-4
+  5  columns   Normal       .col-5
+  6  columns   Normal+      .col-6
+  - - - - - - - - - - - - - - - - - - -
+  7  columns   Medium-      .col-7
+  8  columns   Medium       .col-8
+  9  columns   Medium+      .col-9
+  - - - - - - - - - - - - - - - - - - -
+  10 columns   Large-       .col-10
+  11 columns   Large        .col-11
+  12 columns   Large+       .col-12
+  --------------------------------------
+*/
+
+.grid-content {
+  .grid-content-col {
+    &.col-1 {
+      @include make-md-column(1);
+    }
+
+    &.col-2 {
+      @include make-md-column(2);
+    }
+
+    &.col-3 {
+      @include make-md-column(3);
+    }
+
+    &.col-4 {
+      @include make-md-column(4);
+    }
+
+    &.col-5 {
+      @include make-md-column(5);
+    }
+
+    &.col-6 {
+      @include make-md-column(6);
+    }
+
+    &.col-7 {
+      @include make-md-column(7);
+    }
+
+    &.col-8 {
+      @include make-md-column(8);
+    }
+
+    &.col-9 {
+      @include make-md-column(9);
+    }
+
+    &.col-10 {
+      @include make-md-column(10);
+    }
+
+    &.col-11 {
+      @include make-md-column(11);
+    }
+
+    &.col-12 {
+      @include make-md-column(12);
+    }
+  }
+}

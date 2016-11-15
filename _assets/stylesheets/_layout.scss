@@ -1,0 +1,23 @@
+body {
+  //padding-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+
+  .content {
+    min-height: 508px;
+    margin-top: 60px;
+  }
+}
+
+h1 {
+  @include h1-font;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.navbar-brand {
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}

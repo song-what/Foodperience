@@ -1,0 +1,45 @@
+.content.randomIngredient {
+  height: 518px;
+  width: 100%;
+  margin-top: 50px;
+  background: url(asset_path('randomBag/challenge_accept.svg')) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.ingredientAre {
+  display: block;
+  z-index: 10000;
+  padding-top: 100px;
+  padding: auto 40px;
+  max-height: 350px;
+
+  table {
+    margin-left: 40px;
+    td {
+      padding-right: 10px;
+    }
+  }
+}
+
+.noAndYes {
+  width: 100%;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  height: 120px;
+  text-align: center;
+
+  .no, .yes {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 120px;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+  }
+}

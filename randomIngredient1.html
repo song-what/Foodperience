@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div id="navbar" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index_home.html">Home</a></li>
+    <li><a href="find.html">Rezept finden</a></li>
+    <li class="active"><a href="create.html">Rezept erstellen</a></li>
+    <li><a href="show.html">Live Show</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li><a href="help.html">Hilfe</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+
+<div class="content randomIngredient">
+  <div class="ingredientAre">
+    <table>
+      <tr ng-repeat="z in cart">
+        <td><img src="[[serverIP]][[z.bild]]"  height="50px"/></td><td>[[z.name]]</td>
+      </tr>
+    </table>
+  </div>
+  <div class="noAndYes">
+    <div class="no">
+      <a href="randomBag.html"></a>
+    </div>
+    <div class="yes">
+      <a href="createRecipe.html"></a>
+    </div>
+  </div>

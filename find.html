@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div id="navbar" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index_home.html">Home</a></li>
+    <li class="active"><a href="find.html">Rezept finden</a></li>
+    <li><a href="create.html">Rezept erstellen</a></li>
+    <li><a href="show.html">Live Show</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li><a href="help.html">Hilfe</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+<div class="content">
+
+<h1>Ich habe Hunger...</h1>
+
+<div class="findStart">
+
+  <input type="text" name="name" class="inputIngredientAdd" placeholder="Was gibt es noch in kühlschrank?" value="" ng-model="query">
+  <!-- <input type="button" name="name" class="buttonIngredientAdd" value=""> -->
+  <!-- <input type="button" name="name" class="buttonIngredientAdd" value=""> -->
+  <a class="buttonIngredientAdd" href="find2.html"></a>
+  <!-- <img src="" alt="" /> -->
+  <img src="{% asset_path filter/filter1.svg %}" alt="" class="close" />
+
+</div>
+
+<div class="findResult" >
+  <div class="recipeDetail" ng-repeat="x in rezepte">
+    <ul>
+      <li>
+        [[x.name]]
+      </li>
+      <li class="recipeIngredients" ng-repeat="z in x.zutaten">
+        [[z]]
+      </li>
+      <li class="recipeTime">
+        [[x.totalTime]]
+      </li>
+      <li>
+          <a href="detail.html?rid=[[x.id]]">Detail</a>
+      </li>
+    </ul>
+  </div>
+
+
+</div>

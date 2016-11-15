@@ -1,0 +1,249 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+  body .content {
+    min-height: 508px;
+    margin-top: 60px; }
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px; }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.navbar-brand {
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px; }
+
+/*
+  Grid content
+
+  | Columns  | Category  |  Class      |
+  --------------------------------------
+  1  column    Small-       .col-1
+  2  columns   Small        .col-2
+  3  columns   Small+       .col-3
+  - - - - - - - - - - - - - - - - - - -
+  4  columns   Normal-      .col-4
+  5  columns   Normal       .col-5
+  6  columns   Normal+      .col-6
+  - - - - - - - - - - - - - - - - - - -
+  7  columns   Medium-      .col-7
+  8  columns   Medium       .col-8
+  9  columns   Medium+      .col-9
+  - - - - - - - - - - - - - - - - - - -
+  10 columns   Large-       .col-10
+  11 columns   Large        .col-11
+  12 columns   Large+       .col-12
+  --------------------------------------
+*/
+.grid-content .grid-content-col.col-1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-1 {
+      float: left;
+      width: 8.3333333333%; } }
+.grid-content .grid-content-col.col-2 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-2 {
+      float: left;
+      width: 16.6666666667%; } }
+.grid-content .grid-content-col.col-3 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-3 {
+      float: left;
+      width: 25%; } }
+.grid-content .grid-content-col.col-4 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-4 {
+      float: left;
+      width: 33.3333333333%; } }
+.grid-content .grid-content-col.col-5 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-5 {
+      float: left;
+      width: 41.6666666667%; } }
+.grid-content .grid-content-col.col-6 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-6 {
+      float: left;
+      width: 50%; } }
+.grid-content .grid-content-col.col-7 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-7 {
+      float: left;
+      width: 58.3333333333%; } }
+.grid-content .grid-content-col.col-8 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-8 {
+      float: left;
+      width: 66.6666666667%; } }
+.grid-content .grid-content-col.col-9 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-9 {
+      float: left;
+      width: 75%; } }
+.grid-content .grid-content-col.col-10 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-10 {
+      float: left;
+      width: 83.3333333333%; } }
+.grid-content .grid-content-col.col-11 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-11 {
+      float: left;
+      width: 91.6666666667%; } }
+.grid-content .grid-content-col.col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .grid-content .grid-content-col.col-12 {
+      float: left;
+      width: 100%; } }
+
+.home_button_1,
+.home_button_2,
+.home_button_3 {
+  display: block;
+  height: 160px;
+  width: 96%;
+  margin: 10px 2%;
+  border-radius: 3px; }
+  .home_button_1 img,
+  .home_button_2 img,
+  .home_button_3 img {
+    display: block;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 30px; }
+
+.home_button_1 {
+  background: #87C1A4; }
+
+.home_button_2 {
+  background: #F0906C; }
+
+.home_button_3 {
+  background: #98B6C7; }
+
+.inputIngredientAdd {
+  border: 1px solid #D1D1D1;
+  width: 80%;
+  height: 20px;
+  margin: 0 2%;
+  padding: 0 15px; }
+
+.buttonIngredientAdd {
+  background: #fff;
+  width: 12%;
+  border: 1px solid #D1D1D1;
+  background: url("/assets/layout/plus-e0e8ead73b72ee6f144e32f1a69531c0.svg") center center no-repeat;
+  background-size: 20px auto; }
+
+.inputIngredientAdd,
+.buttonIngredientAdd {
+  height: 40px;
+  display: block;
+  float: left; }
+
+.findStart {
+  display: block;
+  height: 40px; }
+
+.findResult {
+  margin-top: 15px; }
+
+.recipeDetail {
+  width: 96%;
+  margin: auto 2%;
+  border-radius: 3px; }
+  .recipeDetail:nth-child(4n) {
+    background-color: rgba(15, 172, 243, 0.2);
+    color: #076995;
+    color: #595959; }
+  .recipeDetail:nth-child(4n+1) {
+    background-color: rgba(135, 193, 164, 0.2);
+    color: #4d9571;
+    color: #595959; }
+  .recipeDetail:nth-child(4n+2) {
+    background-color: rgba(152, 182, 199, 0.2);
+    color: #5887a1;
+    color: #595959; }
+  .recipeDetail:nth-child(4n+3) {
+    background-color: rgba(240, 144, 108, 0.2);
+    color: #df4d17;
+    color: #595959; }
+  .recipeDetail ul {
+    list-style-type: none;
+    padding: 10px 20px; }
+    .recipeDetail ul li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px; }
+      .recipeDetail ul li:first-child {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px; }
+      .recipeDetail ul li.recipeIngredients {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        font-weight: 300; }
+      .recipeDetail ul li.recipeTime {
+        clear: both;
+        font-style: italic; }
+        .recipeDetail ul li.recipeTime::after {
+          content: "'"; }
+      .recipeDetail ul li:last-child {
+        display: block;
+        float: right;
+        margin-top: -20px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 18px; }

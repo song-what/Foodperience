@@ -1,0 +1,17 @@
+# Site settings
+title: Foodperience
+baseurl: ""
+markdown: kramdown
+destination: ../CodeFest2016
+
+# Plugins
+gems: [jekyll-assets]
+
+# Assets
+assets:
+  cachebust: hard
+  cache: true
+  gzip: false
+  debug: true
+  # js_compressor: uglifier
+  # css_compressor: sass

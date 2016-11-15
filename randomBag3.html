@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="navbar" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index_home.html">Home</a></li>
+    <li><a href="find.html">Rezept finden</a></li>
+    <li class="active"><a href="create.html">Rezept erstellen</a></li>
+    <li><a href="show.html">Live Show</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li><a href="help.html">Hilfe</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+
+<div class="content">
+  <div class="randomBag">
+  </div>
+  <a class="randomBags left" href="randomBag.html?random=4">
+    <img src="{% asset_path layout/arrow-left.svg %}" alt="" />
+  </a>
+  <a class="randomBags mittel" href="randomIngredient3.html">
+    <img src="{% asset_path randomBag/danger_bag.svg %}" alt="" />
+  </a>
+  <a class="randomBags right" href="randomBag1.html?random=3">
+    <img src="{% asset_path layout/arrow-right.svg %}" alt="" />
+  </a>
+  <div class="bagStar">
+    [[cartScore]]
+  </div>

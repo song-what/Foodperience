@@ -1,0 +1,24 @@
+//
+// Bootstrap
+//
+// http://getbootstrap.com/customize/#less-variables
+// https://github.com/twbs/bootstrap-sass/blob/v3.3.1/assets/stylesheets/bootstrap/_variables.scss
+//
+
+// Fix path to fonts
+$icon-font-path: "/fonts/";
+
+$buttonBackground1: #123;
+$inputBorderColor: #eee;
+$color-dark-grey: lighten(#000, 35%);
+$color-blue: #0FACF3;
+$color-green: #87C1A4;
+$color-orange: #F0906C;
+$color-grey-blue: #98B6C7;
+
+@mixin h1-font{
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+}

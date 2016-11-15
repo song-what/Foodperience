@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div id="navbar" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index_home.html">Home</a></li>
+    <li><a href="find.html">Rezept finden</a></li>
+    <li><a href="create.html">Rezept erstellen</a></li>
+    <li><a href="show.html">Live Show</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li class="active"><a href="help.html">Hilfe</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+<div class="content detail">
+  <table >
+    <tr><th colspan="3">
+      <h1>[[rezeptDetails[0].name]]</h1> <br>
+    [[rezeptDetails[0].beschreibung]]   </th></tr>
+      <tr ng-repeat="s in rezeptDetails[0].schritte">
+        <td ><img src="[[serverIP]][[s.zutat.bild]]"  height="35px"/><br>
+        [[s.zutat.name]] </td>
+        <td>  [[s.beschreibung]] </td>
+        <td>ca. [[s.zeit]]min</td>
+    </tr>
+    <tr>
+      <td class="detailTotalTime">
+        Gesamte Zeit: [[rezeptDetails[0].totalTime]]
+      </td>
+    </tr>
+  </table>
+
+  <div class="noAndYes detail">
+    <div class="no">
+      <a href="find.html">Zurück</a>
+    </div>
+    <div class="yes">
+      <a href="#">Like it</a>
+    </div>
+  </div>

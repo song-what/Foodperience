@@ -1,0 +1,117 @@
+.inputIngredientAdd {
+  border: 1px solid #D1D1D1;
+  width: 80%;
+  height: 20px;
+  margin: 0 2%;
+  padding: 0 15px;
+}
+
+
+
+.buttonIngredientAdd {
+  background: #fff;
+  width: 12%;
+  border: 1px solid #D1D1D1;
+  background: url(asset_path('layout/plus.svg')) center center no-repeat;
+  background-size: 20px auto;
+}
+
+
+.buttonIngredientAdd.buttonDone {
+  background: url(asset_path('layout/done.svg')) center center no-repeat;
+  background-size: 20px auto;
+}
+
+.inputIngredientAdd,
+.buttonIngredientAdd {
+  height: 40px;
+  //margin-top: 15px;
+  display: block;
+  float: left;
+}
+
+.findStart {
+  display: block;
+  //min-height: 80px;
+  height: 40px;
+  //margin-top: 40px;
+}
+
+.findResult {
+  margin-top: 60px;
+}
+
+.recipeDetail {
+
+  width: 96%;
+  margin: auto 2%;
+  border-radius: 3px;
+
+  &:nth-child(4n) {
+    background-color: rgba($color-blue, 0.2);
+    color: darken($color-blue, 20%);
+    color: $color-dark-grey;
+
+  }
+
+  &:nth-child(4n+1) {
+    background-color: rgba($color-green, 0.2);
+    color: darken($color-green, 20%);
+    color: $color-dark-grey;
+
+  }
+
+  &:nth-child(4n+2) {
+    background-color: rgba($color-grey-blue, 0.2);
+    color: darken($color-grey-blue, 20%);
+    color: $color-dark-grey;
+  }
+
+  &:nth-child(4n+3) {
+    background-color: rgba($color-orange, 0.2);
+    color: darken($color-orange, 20%);
+    color: $color-dark-grey;
+
+
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 10px 20px;
+
+    li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+
+      &:first-child {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      &.recipeIngredients {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        font-weight: 300;
+      }
+
+      &.recipeTime {
+        clear: both;
+        font-style: italic;
+
+        &::after {
+          content: "'";
+        }
+      }
+
+      &:last-child {
+        display: block;
+        float: right;
+        margin-top: -20px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 18px;
+      }
+    }
+  }
+}

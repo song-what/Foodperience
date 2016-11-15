@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div id="navbar" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index_home.html">Home</a></li>
+    <li><a href="find.html">Rezept finden</a></li>
+    <li><a href="create.html">Rezept erstellen</a></li>
+    <li><a href="show.html">Live Show</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li class="active"><a href="help.html">Hilfe</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+<div class="content createRecipe">
+  <h1>Erstellen dein Rezept</h1>
+
+  <!-- <input type="text"  placeholder="Wie heißt deine Rezept?"/>
+  <input type="button" width="100" height="25" /> -->
+  <input type="text" name="name" class="inputIngredientAdd" ng-model="rezeptName" placeholder="Wie heißt dein Rezept?" value="" ng-model="query">
+  <input type="button" name="name" class="buttonIngredientAdd" ng-click="newRezept()" value="">
+
+  <div class="createSteps" ng-show="lastRezeptId" ng-repeat="s in schritte">
+
+    <img ng-repeat="z in cart" src="[[serverIP]][[z.bild]]" ng-click="s.zid = z.id; s.zName = z.name" height="40"><br>
+    Ausgewählte Zutat: [[s.zName]]<br>
+    Beschreibung: <br>
+    <textarea class="createText" cols="" rows="5" ng-model="s.desc">
+    </textarea><br>
+    Geschätzte Dauer: ca. <input type="number" ng-model="s.zeit" style="width: 3em"> min <br>
+
+  </div>
+  <hr>
+  <input type="button" name="name" class="buttonIngredientAdd buttonAddStep" ng-show="lastRezeptId"  ng-click="hinzufuegen()" value=""/>
+
+  <a type="" name="name" class="buttonIngredientAdd buttonDone" ng-show="lastRezeptId" ng-click="rezeptAbsenden()"  href="succes.html" value=""/>
+    <!-- <img width="100" height="25"ng-show="lastRezeptId" ng-click="rezeptAbsenden()">Rezept ist Fertig (absenden)<br> -->
